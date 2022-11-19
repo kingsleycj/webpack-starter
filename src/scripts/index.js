@@ -1,7 +1,7 @@
 // import '../styles/index.scss';
 
 // console.log('webpack starterkit');
-function sendCars (c...allCarIds) {
+function sendCars (...allCarIds) {
     allCarIds.forEach(id => console.log(id));
 }
 
