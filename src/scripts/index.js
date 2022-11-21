@@ -22,10 +22,42 @@ let id, style;
 
 // Spread Syntax
 function startCars(car1, car2, ...rest){
-    console.log(rest);
+    // console.log(rest);
 }
-
 let carIds = [1, 2, 3, 4, 5, 6];
 startCars(...carIds);
+
+for ( let i = 0; i < 5; i++ ){
+    if (i === 3){
+        continue;
+    }
+    // console.log(i);
+}
+
+let userSettings = {name: 'Jared'};
+let defaultSettings = {name:'Default'};
+
+// console.log(userSettings && defaultSettings)
+
+// console.log( 99 > 21 ? 'yes': 'no');\
+
+function startCar(carId) {
+    let message = "Starting ...";
+    let startFn = function turnKey(){
+        message = "Override"
+    };
+    startFn();
+    // console.log(message);
+
+}
+startCar(123);
+
+
+let message = "Starting ...";
+if (1 === 1){
+    let message = "Override ...";
+    console.log(message);
+}
+console.log(message);
 
 
