@@ -60,4 +60,28 @@ if (1 === 1){
 }
 console.log(message);
 
+(function(){
+    console.log('in function')
+})(); // immediately invoked function expression (IIFES)
 
+// IIFE
+let app = (function(){
+    let carID = 123;
+    let getId = function(){
+    return carID;
+    }; 
+    return {
+        getId : getId
+    };
+})();
+console.log(app.getId());
+
+let o = {
+    carid: 1234,
+    getid: function (){
+        console.log(this)
+        return this.carid;
+    }
+};
+
+console.log(o.getid());
