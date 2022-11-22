@@ -1,6 +1,6 @@
 let timeoutId = setTimeout(function(){
-    console.log('5 seconds passed');
-}, 5000);
+    console.log('1 seconds passed');
+}, 1000);
 
 //to cancel ...
 // clearTimeout(timeoutId);
@@ -13,3 +13,8 @@ let intervalId = setInterval(function(){
 clearInterval(intervalId);
 
 console.log(location.pathname);
+
+
+
+// let eli = document.getElementById('first');
+// console.log(el);
