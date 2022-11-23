@@ -1,8 +1,3 @@
-// export class Car3 {
-//     constructor(id){
-//         this.id = id;
-//     }
-// }
 
 // let eli = document.getElementById("first");
 // let el = document.getElementsByClassName('p1');
@@ -16,4 +11,3 @@
 // eli.style.color = 'blue';
 // eli.setAttribute('foo', 'fooValue');
 // eli.classList.add('p3');
-

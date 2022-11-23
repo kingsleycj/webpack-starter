@@ -12,9 +12,19 @@ let intervalId = setInterval(function(){
 // If need to clear ...
 clearInterval(intervalId);
 
-console.log(location.pathname);
+// console.log(location.pathname);
 
 
 
 // let eli = document.getElementById('first');
 // console.log(el);
+
+try {
+    throw new Error("this is my custom error");
+} 
+catch (error) {
+    console.log("error: ", error);
+}
+finally {
+    console.log("Always Executes");
+}
