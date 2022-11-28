@@ -7,7 +7,8 @@
     "lint:styles": "stylelint src",
     "lint:scripts": "eslint src",
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js",
-    "start": "webpack serve --config webpack/webpack.config.dev.js"
+    "start": "webpack serve --config webpack/webpack.config.dev.js",
+    "type": "module"
   },
   "repository": {
     "type": "git",
@@ -62,6 +63,6 @@
     "jquery": "^3.6.1"
   },
   "module": {
-    "type": "module"
+ 
   }
 }
