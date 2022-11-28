@@ -40,15 +40,23 @@ clearInterval(intervalId);
 // );
 
 //HTTP Requests from XHR
-let xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function(){
-    if (this.readyState === 4 && this.status === 200){
-        console.log(this.responseText);
-    }
-};
-xhttp.open(
-    "GET",
-    "https://63853825875ca3273d38d237.mockapi.io/articles",
-    true
-    );
-xhttp.send();
+// let xhttp = new XMLHttpRequest();
+// xhttp.onreadystatechange = function(){
+//     if (this.readyState === 4 && this.status === 200){
+//         console.log(this.responseText);
+//     }
+// };
+// xhttp.open(
+//     "GET",
+//     "https://63853825875ca3273d38d237.mockapi.io/articles",
+//     true
+//     );
+// xhttp.send();
+
+// jQuery and HTTP GET
+import $ from 'jquery';
+let promise = $.get("https://63853825875ca3273d38d237.mockapi.io/articles");
+promise.then(
+    data => console.log('success: ', data),
+    error => console.log('error: ', error)
+);
