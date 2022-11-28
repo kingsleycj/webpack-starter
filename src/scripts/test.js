@@ -54,8 +54,15 @@ import $ from "jquery";
 // xhttp.send();
 
 // jQuery and HTTP GET
-let promise = $.get("https://63853825875ca3273d38d237.mockapi.io/articles");
+let user = {
+    name: 'Kingsley CJ',
+    avatar: 'hey.jpg'
+};
+
+let promise = $.post("https://63853825875ca3273d38d237.mockapi.io/articles");
 promise.then(
     (data) => console.log("success: ", data),
     (error) => console.log("error: ", error)
 );
+
+
