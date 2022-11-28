@@ -29,10 +29,22 @@ clearInterval(intervalId);
 //     console.log("Always Executes");
 // }
 
-let promise = new Promise (
-    function (resolve, reject) {
-        setTimeout(resolve, 100, 'somevalue');
-    }
-);
+// let promise = new Promise (
+//     function (resolve, reject) {
+//         setTimeout(reject, 100, 'somevalue');
+//     }
+// );
+// promise.then(
+//     value => console.log('fulfilled: ' + value ),
+//     error => console.log('rejected: ' + error )
+// );
 
-console.log(promise);
+//HTTP Requests from XHR
+let xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function(){
+    if (this.readyState === 4 && this.status === 200){
+        console.log(this.responseText);
+    }
+};
+xhttp.open('GET', 'http://5632a4fd82407e001413f1df.mockapi.io/api/v1/users', true);
+xhttp.send();
