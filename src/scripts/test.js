@@ -46,5 +46,9 @@ xhttp.onreadystatechange = function(){
         console.log(this.responseText);
     }
 };
-xhttp.open('GET', 'http://5632a4fd82407e001413f1df.mockapi.io/api/v1/users', true);
+xhttp.open(
+    "GET",
+    "https://63853825875ca3273d38d237.mockapi.io/articles",
+    true
+    );
 xhttp.send();
