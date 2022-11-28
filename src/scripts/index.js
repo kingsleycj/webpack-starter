@@ -204,5 +204,5 @@ console.log(car2.start());
 // console.log(car3.id);
 
 
-console.log(innerWidth);
-console.log(innerHeight);
+// console.log(innerWidth);
+// console.log(innerHeight);
