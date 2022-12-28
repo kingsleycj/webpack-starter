@@ -64,5 +64,3 @@ promise.then(
     (data) => console.log("success: ", data),
     (error) => console.log("error: ", error)
 );
-
-
